@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="./css/index.css">
+    <meta charset="UTF-8">
+    <title>Images fetch demo</title>
+</head>
+
+<body>
+    <section>
+
+        <h1>
+            Passing images through fetch Demo
+        </h1>
+        <form class="add-image-form">
+
+            <label for="pictureDescription">
+                Description:
+            </label>
+            <input type="text" id="pictureDescription" />
+
+            <label for="addImage">
+                Photo:
+            </label>
+            <input type="file" id="addImage" accept="image/*">
+            <button type="submit">
+                Add picture
+            </button>
+        </form>
+        <button id="getAllPictures" type="button">
+            Get all pictures
+        </button>
+    </section>
+
+    <section class="results">
+        <h1></h1>
+    </section>
+
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
