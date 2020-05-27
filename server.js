@@ -13,10 +13,7 @@ const app = express();
 
 app.use('/uploads', express.static('uploads'))
 //this configuration is so that the fontend can access the uploads folder
-// more resources for backend implementation
-//NOTE: the technique from the video doesn't work for frontend
-//it's better to use upload.any()
-//https://www.youtube.com/watch?v=srPXMt1Q0nY&t=20s
+
 app.use(cors);
 app.use(express.static("public"));
 app.use(morgan('dev'));
